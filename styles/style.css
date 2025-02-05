@@ -12,8 +12,7 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: #2C0735;
-    background: linear-gradient(90deg #2C0735 #1A1A1A);
+    background-color: #2C3E50;
 }
 
 header{
@@ -88,7 +87,7 @@ header img{
     height: auto;
     margin: 0;
     border-radius: 10%;
-    border: 5px solid black;
+    border: 5px solid #ECF0F1;
 }
 
 /* PRESENTACION STYLES */
@@ -147,18 +146,25 @@ header img{
 }
 
 .card {
-    border: 2px solid #ff6600;
-    border-radius: 0 0 50px 50px;
+    border: 5px solid #ff6600;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 5px;
     margin-bottom: 20px;
     background-color: rgb(184, 182, 182);
 }
 
 .card-header {
-    background-color: #ff6600;
+    max-width: 100%;
+    background-color: transparent;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .card-title {
-    color: #333;
+    color: #000;
     font-weight: 500;
 }
 
@@ -479,33 +485,7 @@ main h2{
     margin-bottom: 250px;
 }
 
-.accordion.accordion-flush.main-faq{
-    cursor: pointer;
-}
 
-.accordion-item{
-    justify-content: center;
-    align-self: center;
-    width: 80%;
-    margin-left: 200px;
-    color: #fff;
-    text-decoration: underline;
-}
-
-.accordion-button {
-    background-color: #ff6600;
-    color: white;
-    border: none;
-}
-
-.accordion-button:focus {
-    box-shadow: none;
-}
-
-.accordion-body {
-    background-color: #f2f2f2;
-    color: #333;
-}
 
 /* FAQ STYLES */
 
@@ -521,11 +501,25 @@ main h2{
     #presentacion img{
         width: 50%;
     }
+
+    .img-grid{
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-left: 200px;
+    }
 }
 
 @media (min-width: 1399.98px){
     .nav-item{
         margin-right: 150px;
+    }
+
+    .img-grid{
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-left: 350px;
     }
 }
 
@@ -602,6 +596,33 @@ main h2{
         margin: 0 auto;
         display: block;
     }
+
+    #nosotros p{
+        width: 350px;
+        text-align: center;
+    }
+
+    .main-partner h4{
+        text-align: center;
+    }
+
+    .main-partner p{
+        width: 350px;
+        text-align: center;
+    }
+
+    .div-grid{
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .img-grid{
+        margin-left: 150px;
+        max-width: 1005;
+        height: auto;
+        display: block;
+    }
+    
   }
 
   /* MOBILE */
