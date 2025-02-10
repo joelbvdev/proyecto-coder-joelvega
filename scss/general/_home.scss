@@ -1,0 +1,447 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/* INDEX | Estilos*/
+/* HEADER STYLES */
+header{
+    @include flex;
+        img{
+            width: 60%;
+            height: auto;
+            margin-left: 70px;
+        }
+}
+/* HEADER STYLES */
+
+
+/* MENU NAVEGACION */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.navbar{
+    background-color: transparent !important;
+}
+
+.navbar .nav-link{
+    color: $nav-p-color;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.navbar .navbar-brand:hover{
+    color: $title-color;
+}
+
+.navbar .nav-link:hover{
+    color: $title-color;
+}
+/* MENU DE NAVEGACION */
+
+/* PRESENTACION STYLES */
+#presentacion{
+    @include flex-1;
+
+    h2{
+        font-size: 30px;
+        color: #FF6F00;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        color: $nav-p-color;
+        margin-bottom: 20px;
+        text-decoration: underline;
+    }
+
+    img{
+        width: 200vh;
+        height: auto;
+        margin: 0;
+        border-radius: 10%;
+        border: 5px solid #ECF0F1;
+    }
+}
+/* PRESENTACION STYLES */
+
+/* LO MAS BUSCADO STYLES */
+#buscado{
+    @include flex-1;
+
+    h4{
+        color: $title-color;
+        font-size: 30px;
+        font-weight: 500;
+        margin-top: 50px;
+    }
+
+    a{
+        text-decoration: none;
+        color: $white-color;
+        cursor: pointer;
+        margin-bottom: 30px;
+    }
+
+    a:hover{
+        color: $title-color;
+    }
+
+    img{
+        width: 30%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+
+/* LO MAS BUSCADO STYLES */
+
+/* OPINION STYLES */
+#opinion{
+    @include flex-1;
+}
+
+.opinion__titulo h4{
+    text-align: center;
+    color: #FF6F00;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.card{
+    border: 5px solid $title-color;
+    @include border-1;
+    padding: 5px;
+    margin-bottom: 20px;
+    background-color: rgb(184, 182, 182);
+}
+
+.card-header {
+    max-width: 100%;
+    background-color: transparent;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.card-title {
+    color: #000;
+    font-weight: 500;
+}
+
+/* Transicion, la saque de ChatGpt */
+.card:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+/* OPINION STYLES */
+
+/* Linea */
+hr{
+    border: 2px solid #1A1A1A;
+    margin-left: 30px;
+    margin-right: 50px;
+}
+/* Linea */
+
+/* FOOTER STYLES */
+.footer {
+    color: $white-color;
+    font-size: 1rem;
+}
+
+.footer__container{
+    @include flex-2;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer__title {
+    color: $title-color;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer__info{
+    p{
+        color: $title-color;
+    }
+    
+    a{
+        color: $white-color;
+        text-decoration: none;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+}
+
+.footer__links{
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li{
+        margin: 1rem 0;
+    }
+
+    a{
+        color: $white-color;
+        text-decoration: none;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+}
+
+.footer__social{
+    a{
+        text-decoration: none;
+        color: $white-color;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+}
+
+.footer__bottom {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 1rem;
+}
+
+/* FOOTER STYLES */
+/* INDEX STYLES */
+
+/* PRODUCTOS STYLES */
+/* HEADER PRODUCTOS */
+
+header{
+    img{
+        width: 10%;
+        height: auto;
+    }
+}
+
+/* HEADER PRODUCTOS */
+
+/* MAIN PRODUCTOS */
+main{
+    h1{
+        color: $title-color;
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+}
+
+.products{
+    @include grid;
+    gap: 20px;
+    text-align: center;
+
+    div{
+        img{
+            max-width: 70%;
+            height: auto;
+        }
+    }
+}
+
+.products__uno{
+    img{
+        @include img;
+    }
+}
+
+.products__dos{
+    img{
+        @include img;
+    }
+}
+
+.products__tres{
+    img{
+        @include img;
+    }
+}
+
+.products__cuatro{
+    img{
+        @include img;
+    }
+}
+
+.p-img{
+    margin-bottom: 50px;
+}
+
+.p-titu{
+    margin-top: 50px;
+}
+
+.products__uno{
+    p{
+        @include parrafo;
+    }
+}
+
+.products__dos{
+    p{
+        @include parrafo;
+    }
+}
+
+.products__tres{
+    p{
+        @include parrafo;
+    }
+}
+
+.products__cuatro{
+    p{
+        @include parrafo;
+    }
+}
+
+.btn-add-cart{
+    display: block;
+    margin: 10px auto;
+    padding: 8px 12px;
+    background-color: $title-color;
+    color: $white-color;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-add-cart:hover{
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.7);
+}
+
+/* MAIN PRODUCTOS */
+
+.hr-productos{
+    border: 2px solid black;
+    margin-left: 30px;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+/* FOOTER PRODUCTOS */
+.pie__titulo{
+    color: $title-color;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.pie{
+    p{
+        color: $white-color;
+        gap: 20px;
+        margin-bottom: 10px;
+    }
+
+    span{
+        color: $title-color;
+        text-decoration: underline;
+    }
+}
+/* FOOTER PRODUCTOS */
+
+/* PRODUCTOS STYLES */
+
+
+/* SOBRE NOSOTROS STYLES */
+/* MAIN SOBRE NOSOTROS STYLES */
+#nosotros{
+    @include flex-1;
+
+    h1{
+        color: $title-color;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    p{
+        color: $white-color;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 10px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    img{
+        width: 70%;
+        border-radius: 40%;
+        margin-top: 30px;
+    }
+}
+/* SOBRE NOSOTROS STYLES */
+
+/* PARTNER STYLES */
+.main-partner{
+    @include flex-1;
+
+    h4{
+        color: $title-color;
+        text-decoration: underline;
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    p{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-bottom: 30px;
+    }
+}
+
+.div-grid{
+    @include grid-2;
+    gap: 30px;
+}
+
+.img-grid{
+    margin-top: 30px;
+    margin-left: 350px;
+}
+/* PARTNER STYLES */
+
+/* FAQ STYLES */
+#faq-main{
+    height: 90vh;
+}
+
+main h2{
+    color: $title-color;
+    text-align: center;
+    margin-bottom: 250px;
+}
+
+/* FAQ STYLES */
