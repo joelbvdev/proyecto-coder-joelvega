@@ -91,6 +91,23 @@
         display: block;
         margin-left: 100px;
     }
+
+    #faq-main {
+        padding: 10px;
+    }
+
+    .accordion {
+        width: 100% !important;
+        margin-top: 20px;
+    }
+
+    .accordion-button {
+        font-size: 1rem;
+    }
+
+    .accordion-body {
+        font-size: 0.9rem;
+    }
 }
 
 /* TABLET */

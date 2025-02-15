@@ -48,7 +48,7 @@ header{
 
     h2{
         font-size: 30px;
-        color: #FF6F00;
+        color: $title-color;
         font-weight: 600;
         margin-bottom: 20px;
     }
@@ -87,10 +87,13 @@ header{
         color: $white-color;
         cursor: pointer;
         margin-bottom: 30px;
+        background-color: $title-color;
+        padding: 5px;
+        @include border-1
     }
 
     a:hover{
-        color: $title-color;
+        box-shadow: 0 0 15px rgba(0, 123, 255, 0.7);
     }
 
     img{
@@ -109,7 +112,7 @@ header{
 
 .opinion__titulo h4{
     text-align: center;
-    color: #FF6F00;
+    color: $title-color;
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 50px;
@@ -389,11 +392,13 @@ main{
         padding: 10px;
         margin-left: 200px;
         margin-right: 200px;
+        text-align: center;
     }
 
     img{
-        width: 70%;
-        border-radius: 40%;
+        width: 50%;
+        border-radius: 30%;
+        border: 2px solid white;
         margin-top: 30px;
     }
 }
@@ -419,6 +424,7 @@ main{
         margin-left: 200px;
         margin-right: 200px;
         margin-bottom: 30px;
+        text-align: center;
     }
 }
 
@@ -436,12 +442,12 @@ main{
 /* FAQ STYLES */
 #faq-main{
     height: 90vh;
+    padding: 300px;
 }
 
-main h2{
-    color: $title-color;
-    text-align: center;
-    margin-bottom: 250px;
+.titulo-faq{
+        color: $title-color;
+        text-align: center;
 }
 
 /* FAQ STYLES */

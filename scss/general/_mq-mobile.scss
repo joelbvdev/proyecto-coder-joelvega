@@ -38,6 +38,7 @@
     #presentacion{
         h2{
             font-size: 20px;
+            text-align: center;
         }
 
         p{
@@ -98,6 +99,25 @@
     .img-grid img {
         width: 100%;
         max-width: 300px;
+    }
+
+    #faq-main {
+        padding: 20px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .accordion {
+        width: 100% !important;
+        margin-top: 20px;
+    }
+
+    .accordion-button {
+        font-size: 1rem;
+    }
+
+    .accordion-body {
+        font-size: 0.9rem;
     }
 }
 

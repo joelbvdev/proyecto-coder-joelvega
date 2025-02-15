@@ -106,9 +106,15 @@ header img {
   color: #fff;
   cursor: pointer;
   margin-bottom: 30px;
+  background-color: #FF6F00;
+  padding: 5px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 #buscado a:hover {
-  color: #FF6F00;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.7);
 }
 #buscado img {
   width: 30%;
@@ -386,10 +392,12 @@ main h1 {
   padding: 10px;
   margin-left: 200px;
   margin-right: 200px;
+  text-align: center;
 }
 #nosotros img {
-  width: 70%;
-  border-radius: 40%;
+  width: 50%;
+  border-radius: 30%;
+  border: 2px solid white;
   margin-top: 30px;
 }
 
@@ -416,6 +424,7 @@ main h1 {
   margin-left: 200px;
   margin-right: 200px;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .div-grid {
@@ -434,12 +443,12 @@ main h1 {
 /* FAQ STYLES */
 #faq-main {
   height: 90vh;
+  padding: 300px;
 }
 
-main h2 {
+.titulo-faq {
   color: #FF6F00;
   text-align: center;
-  margin-bottom: 250px;
 }
 
 /* FAQ STYLES */
@@ -503,6 +512,7 @@ main h2 {
   }
   #presentacion h2 {
     font-size: 20px;
+    text-align: center;
   }
   #presentacion p {
     text-align: center;
@@ -545,6 +555,21 @@ main h2 {
   .img-grid img {
     width: 100%;
     max-width: 300px;
+  }
+  #faq-main {
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .accordion {
+    width: 100% !important;
+    margin-top: 20px;
+  }
+  .accordion-button {
+    font-size: 1rem;
+  }
+  .accordion-body {
+    font-size: 0.9rem;
   }
 }
 /* MOBILE */
@@ -617,6 +642,19 @@ main h2 {
     height: auto;
     display: block;
     margin-left: 100px;
+  }
+  #faq-main {
+    padding: 10px;
+  }
+  .accordion {
+    width: 100% !important;
+    margin-top: 20px;
+  }
+  .accordion-button {
+    font-size: 1rem;
+  }
+  .accordion-body {
+    font-size: 0.9rem;
   }
 }
 /* TABLET */
